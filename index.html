@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="video">
+      <video autoplay muted loop id="background-video">
+        <source
+          src="./assets/pexels_videos_2832316 (1080p).mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <section class="top">
+      <div class="nav">
+        <img src="./assets/hungry.png" alt="" id="navLogo">
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutUs.html">ABOUT US</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li>CONTACT</li>
+          </ul>
+        </nav>
+        <div class="search-img">
+          <p>Try something new!</p>
+          <a href="#searchLink"><img src="./assets/output-onlinegiftools.gif" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="title">
+        <img src="./assets/hungry.png" alt="" width="30%" />
+        <h1 id="logo">CRAVINGS</h1>
+        <p>Craving something? Search a recipe now!</p>
+      </div>
+
+      <div class="buttons">
+        <button class="btn1">
+          <a href="" class="btn searchMeal">SEARCH FOR A MEAL</a>
+        </button>
+        <button class="btn2">
+          <a href="" class="btn discoverMeal"> GENERATE A RANDOM MEAL</a>
+        </button>
+      </div>
+    </section>
+
+<section class="about">
+  <h1>ABOUT US</h1>
+  <h2> Welcome to Cravings - Your Culinary Companion !</h2>
+  <p>Indulge your senses and embark on a delightful journey with Cravings,<br> your ultimate recipe finder website. Whether you're a seasoned chef or just <br>starting your culinary adventure, Cravings is here to spark inspiration in your kitchen.</p>
+</section>
+
+    <section class="middle">
+      <h1>Try Something New Today!</h1>
+      <p id="middle-p">(click on the image to view ingredients)</p>
+      <p id="mealName"></p>
+      <div class="random">
+        <div class="R-img">
+          <img id="mealImage" src="" alt="" />
+        </div>
+
+        <ul id="ingredientsList" class="hidden"></ul>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="searchBox">
+      <a id="searchLink"> <h1>What are you craving today?</h1></a> 
+        <div class="search">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a meal..."
+          />
+          <button id="searchButton">Search</button>
+        </div>
+      </div>
+      <div id="mealList" class="meal-list"></div>
+      <div class="modal-container">
+        <button id="recipeCloseBtn" class="close-button">&times;</button>
+        <div class="meal-details-content"></div>
+      </div>
+    </section>
+
+    <section class="bottom">
+      <footer>
+        <div class="f-logo">
+          <img src="./assets/hungry.png" alt="">
+          <h2>CRAVINGS</h2>
+          </div>
+          <div class="right">
+            <img src="./assets/logo.png" alt="" id="git">
+          </div>
+          <h4>Made by Vanshika Sharma</h4>
+          <h3>CHITKARA X KALVIUM</h3>
+      </footer>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
